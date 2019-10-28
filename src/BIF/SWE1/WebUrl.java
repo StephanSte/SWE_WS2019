@@ -36,7 +36,7 @@ public class WebUrl implements Url {
 
     @Override
     public Map<String, String> getParameter() {
-        return null;
+        return parameters;
     }
 
     @Override
