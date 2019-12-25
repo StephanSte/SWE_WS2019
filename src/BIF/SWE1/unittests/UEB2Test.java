@@ -6,6 +6,7 @@ package BIF.SWE1.unittests;
 
 import static org.junit.Assert.*;
 
+import BIF.SWE1.unittests.mocks.RequestHelper;
 import org.junit.Test;
 
 import BIF.SWE1.interfaces.Request;

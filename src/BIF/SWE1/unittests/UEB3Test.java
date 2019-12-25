@@ -6,6 +6,8 @@ import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStreamReader;
+
+import BIF.SWE1.unittests.mocks.RequestHelper;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

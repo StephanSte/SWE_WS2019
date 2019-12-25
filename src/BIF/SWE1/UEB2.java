@@ -13,7 +13,7 @@ public class UEB2 {
 	}
 
 	public Url getUrl(String s) {
-		return null;
+		return  new UrlFactory().getWebUrl(s);
 	}
 
 	public Request getRequest(InputStream inputStream) {

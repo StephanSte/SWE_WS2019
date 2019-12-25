@@ -1,4 +1,4 @@
-package BIF.SWE1.unittests;
+package BIF.SWE1.unittests.mocks;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

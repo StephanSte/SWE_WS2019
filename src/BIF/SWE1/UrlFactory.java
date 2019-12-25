@@ -10,6 +10,12 @@ public class UrlFactory {
         if(url == null){
             return new WebUrl();
         }
+
+        //url = getHostname(url);
+        //url = getFragment(url);
+        url = getSplitSegments(url);
+
+
         return new WebUrl(url, parsePath(url), parseFilename(url), parseExtension(url), parseParameters(url));
     }
 
@@ -27,6 +33,8 @@ public class UrlFactory {
     * and finds the first . which indicates the beginning if the file extension
     * @param url String
     * @return filename of the given url
+     * 
+     * www.test.com/this.ext
     */
 
     private String parseFilename(String url) {
@@ -46,6 +54,7 @@ public class UrlFactory {
         /** an [0] ist das zw Punkt und ?
          * und das wird mit einem Punkt davor zurückgegeben*/
     }
+
     private Map<String, String> parseParameters(String url) {
         HashMap<String, String> parameters = new HashMap<>();
         if (url == null || !url.contains("?"))
@@ -59,5 +68,37 @@ public class UrlFactory {
              parameters.put(param.split("=")[0], param.split("=")[1]);
          }
          return parameters;
+    }
+
+    private String getHostname(String url){
+            String[] Hostname;
+            Hostname = url.split("#");
+            System.out.print(Hostname[0]);
+            return Hostname[0];
+    }
+
+    private String getFragment(String url){
+            String[] Hostname;
+            Hostname = url.split("#");
+            System.out.print(Hostname[1]);
+            return Hostname[1];
+    }
+    private String getSplitSegments(String url){
+        String[] Hostname;
+        String suburl;
+        suburl = "";
+        if(url.substring(1, url.length()) == "/"){
+            suburl = url.substring(1, url.length());
+        }
+
+        Hostname = suburl.split("/");
+            for (int i = 0; i < Hostname.length; i++){
+                System.out.print(Hostname[i]+ ".\n");
+            }
+            String returnValue = null;
+            returnValue = Hostname.toString();
+            return returnValue;
+            //returnValue und ohne String[] nur String
+            //return Hostname and add to private : String[];
     }
 }

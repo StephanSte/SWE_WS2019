@@ -13,6 +13,7 @@ import java.io.UnsupportedEncodingException;
 import java.time.LocalDate;
 import java.util.UUID;
 
+import BIF.SWE1.unittests.mocks.RequestHelper;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

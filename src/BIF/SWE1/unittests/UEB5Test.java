@@ -15,6 +15,7 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.StreamSupport;
 
+import BIF.SWE1.unittests.mocks.RequestHelper;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

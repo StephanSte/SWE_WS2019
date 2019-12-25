@@ -8,6 +8,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStreamReader;
 import java.util.stream.StreamSupport;
 
+import BIF.SWE1.unittests.mocks.RequestHelper;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

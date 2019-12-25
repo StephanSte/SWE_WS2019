@@ -11,4 +11,7 @@ public class UEB1 {
 	public void helloWorld() {
 
 	}
+
+    public static class RequestHandler {
+    }
 }
