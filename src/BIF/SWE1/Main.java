@@ -5,6 +5,7 @@ public class Main {
     /**
      * Waits for a connection from a client. If a connection ist established, a thread will be created.
      * @param args No parameters are needed.
+     blabla
      */
     public static void main(String[] args) {
         try {
